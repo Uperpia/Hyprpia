@@ -43,7 +43,7 @@
     },
     "custom/gpu": {
         "exec": "~/.config/hypr/scripts/gpu.sh",
-        "interval": 2,
+        "interval": 15,
         "format": "GPU: {}",
         "align": 0
     },
