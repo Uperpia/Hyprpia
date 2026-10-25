@@ -1,0 +1,98 @@
+{
+    "layer": "bottom",
+    "exclusive": false,
+    "position": "left",
+    "width": 240,
+    "margin-top": 40,
+    "margin-right": 40,
+    "spacing": 6,
+
+    "modules-left": [
+        "clock",
+        "custom/spacer",
+        "network",
+        "cpu",
+        "custom/gpu",
+        "memory",
+        "battery",
+        "temperature",
+        "power-profiles-daemon",
+        "disk",
+        "pulseaudio",
+        "custom/uptime"
+       ],
+
+    "custom/spacer": {
+        "format": "-------------------"
+    },
+    "clock": {
+        "format": "{:%H:%M - %d %b}"
+    },
+  "network": {
+        "interval": 2,
+        "justify": "left",
+        "align": 0,
+        "format-wifi": "DWN: ↓{bandwidthDownBytes}\nUPL: ↑{bandwidthUpBytes}",
+        "format-ethernet": "DWN: ↓{bandwidthDownBytes}\nUPL: ↑{bandwidthUpBytes}",
+        "format-disconnected": "NET: Offline"
+    },
+    "cpu": {
+        "format": "CPU: {usage}%",
+        "interval": 2,
+        "align": 0
+    },
+    "custom/gpu": {
+        "exec": "~/.config/hypr/scripts/gpu.sh",
+        "interval": 2,
+        "format": "GPU: {}",
+        "align": 0
+    },
+    "memory": {
+        "format": "RAM: {}%",
+        "interval": 2,
+        "align": 0
+    },
+    "battery": {
+        "interval": 10,
+        "align": 0,
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "format": "BAT: {capacity}%",
+        "format-charging": "BAT: {capacity}% [C]",
+        "format-plugged": "BAT: {capacity}% [P]",
+        "format-full": "BAT: {capacity}% [F]"
+    },
+    "temperature": {
+        "interval": 5,
+        "align": 0,
+        "format": "TMP: {temperatureC}°C"
+    },
+    "pulseaudio": {
+        "align": 0,
+        "format": "VOL: {volume}%",
+        "format-muted": "VOL: [MUT]"
+    },
+    "disk": {
+    "interval": 60,
+    "align": 0,
+    "format": "DSK: {percentage_used}%",
+    "path": "/"
+    },
+    "custom/uptime": {
+        "exec": "awk '{print int($1/3600)\"h \"int(($1%3600)/60)\"m\"}' /proc/uptime",
+        "interval": 60,
+        "align": 0,
+        "format": "UPT: {}"
+    },
+    "power-profiles-daemon": {
+        "format": "PWR: {icon}",
+        "format-icons": {
+            "performance": "PER",
+            "balanced": "BAL",
+            "power-saver": "SAV"
+        },
+        "align": 0
+    },
+    }

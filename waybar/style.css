@@ -1,0 +1,24 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: bold;
+    background: transparent;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+window#waybar {
+    background: transparent;
+}
+
+/* L'orologio e il divisore restano centrati con i loro padding standard */
+#clock, #custom-spacer {
+    padding: 0 10px;
+}
+
+#network, #cpu, #custom-gpu, #memory, #battery, #temperature, #power-profiles-daemon, #disk, #pulseaudio, #custom-uptime {
+    padding-right: 10px;
+    padding-left: 55px; /* o il valore che avevi scelto per centrare la colonna */
+}
