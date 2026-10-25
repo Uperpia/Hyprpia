@@ -35,3 +35,4 @@ This script installs a series of packages that I use to make the config more int
 * `kalker`: TUI calculator.
 * `hyprlock`: Lockscreen.
 * `hypridle`: Activates lockscreen/screen timeout on inactivity.
+* `power-profiles-daemon`: Power profile manager.
