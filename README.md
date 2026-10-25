@@ -10,13 +10,28 @@ For example, to manage power profiles, I use a "Diamond" key located on my lapto
 1. Copy the contents of the entire directory to `~/.config/` (making a backup before proceeding is recommended).
 2. Make all scripts within `~/.config/hypr/scripts` executable (for example, using `chmod`).
 3. Run `~/.config/scripts/install_dependencies.sh`.
+
 At this point, the process is essentially complete. Some optional additions include installing `lazyvim` and changing the wallpaper path in `~/.config/hypr/hyprconfig/autostart.lua` (requires restarting Hyprland).
 
 ## install_dependencies.sh
 This script installs a series of packages that I use to make the config more interactive/complete (e.g., clipboard, screenshots, etc.). Below is a list of the included programs and their usage.
-+ `paru` : package manager alternativo a pacman, comodo perchè permette di installare anche da AUR oltre i repo di Arch/Cachy
-+ `neovim` : editor di testo TUI basato su vim (in particolare va poi installato il plugin `lazyvim`
-+ `kitty` : emulatore di terminale che supporta ootb trasparenze e rappresentazioni delle immagini a qualità nativa
-+ `fish` : shell che supporta autocompletamento/suggerimenti dei comandi e definizioni rapide di alias
-+ `fzf` :
-+ ` 
+* `paru`: Alternative package manager to pacman, convenient because it allows installing from the AUR in addition to Arch/Cachy repos.
+* `neovim`: TUI text editor based on vim (specifically, the `lazyvim` plugin should be installed afterwards).
+* `kitty`: Terminal emulator that supports out-of-the-box transparency and native-quality image rendering.
+* `fish`: Shell that supports autocomplete/command suggestions and quick alias definitions.
+* `fzf`: Command-line fuzzy finder, used by launcher.sh and clipboard.sh.
+* `j4-dmenu-desktop`: Used by launcher.sh.
+* `yazi`: TUI file explorer.
+* `btop`: TUI resource monitor.
+* `ttf-nerd-fonts-symbols`: Icon pack used by yazi and kitty.
+* `nmtui`: TUI network manager.
+* `zen-browser-bin`: Firefox fork, currently my fav browser :3
+* `grim`, `slurp`, `jq`: Used by screenshot.sh.
+* `cliphist`, `wl-clipboard`: Used by clipboard.sh.
+* `qt5ct`: Theme manager for Qt5 apps.
+* `qt6ct`: Theme manager for Qt6 apps.
+* `swaybg`: Allows loading a custom wallpaper in Hyprland.
+* `waybar`: System bar. However, I use it as a non-interactive overlay (MangoHud style) to quickly monitor time, resources, etc.
+* `kalker`: TUI calculator.
+* `hyprlock`: Lockscreen.
+* `hypridle`: Activates lockscreen/screen timeout on inactivity.
