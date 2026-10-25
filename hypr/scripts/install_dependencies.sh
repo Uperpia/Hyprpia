@@ -9,6 +9,7 @@ sudo pacman -S paru
 # Installazione dei pacchetti necessari alla config di Hyprland
 # oppure programmi che uso abitualmente
 sudo paru -S \
+  neovim \
   kitty \
   fish \
   fzf \
