@@ -8,7 +8,7 @@ For example, to manage power profiles, I use a "Diamond" key located on my lapto
 
 ## How to install
 1. Copy the contents of the entire directory to `~/.config/` (making a backup before proceeding is recommended).
-2. Make all scripts within `~/.config/hypr/scripts` executable (for example, using `chmod`).
+2. Make all scripts within `~/.config/hypr/scripts/` executable (for example, using `chmod`).
 3. Run `~/.config/scripts/install_dependencies.sh`.
 
 At this point, the process is essentially complete. Some optional additions include installing `lazyvim` and changing the wallpaper path in `~/.config/hypr/hyprconfig/autostart.lua` (requires restarting Hyprland).
