@@ -30,6 +30,7 @@ sudo paru -S \
   waybar \
   kalker \
   hyprlock \
-  hypridle
+  hypridle \
+  power-profiles-daemon
 
 echo "Installazione completata!"
