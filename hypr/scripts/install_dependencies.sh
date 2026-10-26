@@ -31,6 +31,9 @@ sudo paru -S \
   kalker \
   hyprlock \
   hypridle \
-  power-profiles-daemon
+  power-profiles-daemon \
+  imv \
+  zathura \
+  zathura-pdf-mupdf
 
 echo "Installazione completata!"

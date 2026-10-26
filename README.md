@@ -36,3 +36,5 @@ This script installs a series of packages that I use to make the config more int
 * `hyprlock`: Lockscreen.
 * `hypridle`: Activates lockscreen/screen timeout on inactivity.
 * `power-profiles-daemon`: Power profile manager.
+* `imv`: Minimal image viewer.
+* `zathura`, `zathura-pdf-mupdf`: Pdf reader, vim-line syntax (install `zathura-cb` for comics formats support).

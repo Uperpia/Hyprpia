@@ -1,0 +1,13 @@
+# Di default visualizzazione a due pagine (la copertina ne avrà sempre solo 1)
+set pages-per-row 2
+set first-page-column 1:2
+
+# Permette di muoversi tra le pagine con le frecce direzionali
+map <Right> navigate next
+map <Left> navigate previous
+
+# Digita num + invio per saltare a pagina num
+map <Return> goto
+
+# Comando per pulire la cache di zathura
+# rm ~/.local/share/zathura/bookmarks.sqlite 
