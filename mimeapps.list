@@ -1,0 +1,30 @@
+[Default Applications]
+# Browser & Protocolli Web
+text/html=zen.desktop
+x-scheme-handler/http=zen.desktop
+x-scheme-handler/https=zen.desktop
+x-scheme-handler/about=zen.desktop
+x-scheme-handler/unknown=zen.desktop
+
+# Documenti & Testo
+application/pdf=org.pwmt.zathura.desktop
+text/plain=nvim.desktop
+text/markdown=nvim.desktop
+
+# Immagini (imv)
+image/png=imv.desktop
+image/jpeg=imv.desktop
+image/webp=imv.desktop
+image/gif=imv.desktop
+image/svg+xml=imv.desktop
+
+# Audio & Video (mpv)
+video/mp4=mpv.desktop
+video/x-matroska=mpv.desktop
+video/webm=mpv.desktop
+audio/mpeg=mpv.desktop
+audio/flac=mpv.desktop
+
+# File Manager & Cartelle
+inode/directory=org.kde.dolphin.desktop
+

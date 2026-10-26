@@ -33,6 +33,7 @@ sudo paru -S \
   hypridle \
   power-profiles-daemon \
   imv \
+  mpv \
   zathura \
   zathura-pdf-mupdf
 
