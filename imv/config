@@ -1,0 +1,36 @@
+[options]
+# Sfondo personalizzato (HEX)
+background = 111111
+
+# Apre imv direttamente a schermo intero
+fullscreen = true
+
+# Adatta l'immagine allo schermo (ingrandisce o rimpicciolisce mantenendo le proporzioni)
+scaling_mode = full
+
+# Disabilita il testo in sovrimpressione con nome e risoluzione dell'immagine
+overlay = false
+
+# Permette a imv di usare i suoi comportamenti predefiniti per i tasti non mappati
+suppress_default_binds = false
+
+[binds]
+# Navigazione tra le foto usando le freccette
+<Left> = prev
+<Right> = next
+# Lo zoom avviene di default con <Up> e <Down>
+
+# Spostamento (panning) dell'immagine quando è zoomata usando i tasti stile Vim
+h = pan -50 0
+l = pan 50 0
+k = pan 0 -50
+j = pan 0 50
+
+# Ripristina l'immagine (annulla lo zoom)
+0 = reset
+
+# Ruota l'immagine di 90 gradi
+r = rotate by 90
+
+# Allinea il cursore di Yazi all'ultima foto vista e poi chiudi imv
+q = exec ya emit reveal "$imv_current_file"; quit

@@ -1,0 +1,11 @@
+# Config temporanea per rendere più consistente l'uso con imv
+
+[opener]
+imv_folder = [
+	{ run = 'sh -c "imv -n \"\$0\" \"\${0%/*}\"" %s', orphan = true, desc = "imv (Cartella Completa)", for = "linux" }
+]
+
+[open]
+prepend_rules = [
+	{ mime = "image/*", use = "imv_folder" }
+]
