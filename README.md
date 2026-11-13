@@ -19,23 +19,24 @@ This script installs a series of packages that I use to make the config more int
 * `neovim`: TUI text editor based on vim (specifically, the `lazyvim` plugin should be installed afterwards).
 * `kitty`: Terminal emulator that supports out-of-the-box transparency and native-quality image rendering.
 * `fish`: Shell that supports autocomplete/command suggestions and quick alias definitions.
-* `fzf`: Command-line fuzzy finder, used by launcher.sh and clipboard.sh.
-* `j4-dmenu-desktop`: Used by launcher.sh.
+* `fzf`: Command-line fuzzy finder, used by hypr/scripts/launcher.sh and hypr/scripts/clipboard.sh.
+* `j4-dmenu-desktop`: Used by hypr/script/launcher.sh.
 * `yazi`: TUI file explorer.
 * `btop`: TUI resource monitor.
 * `ttf-nerd-fonts-symbols`: Icon pack used by yazi and kitty.
 * `nmtui`: TUI network manager.
 * `zen-browser-bin`: Firefox fork, currently my fav browser :3
-* `grim`, `slurp`, `jq`: Used by screenshot.sh.
-* `cliphist`, `wl-clipboard`: Used by clipboard.sh.
+* `grim`, `slurp`, `jq`: Used by hypr/scripts/screenshot.sh.
+* `cliphist`, `wl-clipboard`: Used by hypr/scripts/clipboard.sh.
 * `qt5ct`: Theme manager for Qt5 apps.
 * `qt6ct`: Theme manager for Qt6 apps.
 * `swaybg`: Allows loading a custom wallpaper in Hyprland.
 * `waybar`: System bar. However, I use it as a non-interactive overlay (MangoHud style) to quickly monitor time, resources, etc.
 * `kalker`: TUI calculator.
-* `hyprlock`: Lockscreen.
-* `hypridle`: Activates lockscreen/screen timeout on inactivity.
+* `hyprlock`: Lockscreen manager.
+* `hypridle`: Idle daemon listener, activates lockscreen/screen timeout on inactivity.
 * `power-profiles-daemon`: Power profile manager.
-* `imv`: Minimal image viewer.
-* `mpv`: Media player. 
+* `imv`: Minimal image viewer (.png, .jpeg, .gif, .ecc).
+* `mpv`: Minimal media player (.mp4, .mp3, .mkv, .avi, .ecc)
 * `zathura`, `zathura-pdf-mupdf`: Pdf reader, vim-line syntax (install `zathura-cb` for comics formats support).
+* `brightnessctl`: Terminal utility for adjusting the screen brightness, used by hypr/hyprconfig/shortcuts.lua

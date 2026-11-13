@@ -35,6 +35,7 @@ sudo paru -S \
   imv \
   mpv \
   zathura \
-  zathura-pdf-mupdf
+  zathura-pdf-mupdf \
+  brightnessclt
 
 echo "Installazione completata!"
